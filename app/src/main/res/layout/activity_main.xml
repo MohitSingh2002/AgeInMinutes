@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/background"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calculate_your"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/textColor"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/age"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:background="@color/blue"
+        android:paddingHorizontal="5dp"
+        android:paddingVertical="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/in_minutes"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/textColor"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/btnDatePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:layout_marginHorizontal="10dp"
+        android:text="@string/select_date"
+        android:textColor="@color/grey"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="25dp"/>
+
+    <TextView
+        android:id="@+id/selectedDateTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selected Date"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/textColor"
+        android:textSize="20sp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/selected_date"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/grey"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/minutesTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Minutes"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/textColor"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/in_minutes_till_date"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/grey"
+        android:textSize="15sp"/>
+
+</LinearLayout>
